@@ -10,13 +10,12 @@ import cn.david.tipview.view.TipView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TipView tipView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tipView = (TipView) findViewById(R.id.tip_view);
+        TipView tipView = findViewById(R.id.tip_view);
         tipView.setTipList(generateTips());
     }
 
